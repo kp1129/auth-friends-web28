@@ -17,11 +17,13 @@ const FriendList = () => {
 
   return (
     <div>
-      <h1>wow you logged in</h1>
-      {friends.map(friend => (
-        <Friend data={friend} />
-      ))}
+      
       <AddFriend setFriends={setFriends} />
+    <div className="friends-container">
+      {friends.map(friend => (
+        <Friend setFriends={setFriends} data={friend} />
+      ))}
+      </div>
     </div>
   );
 };

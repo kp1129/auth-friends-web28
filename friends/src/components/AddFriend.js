@@ -38,7 +38,7 @@ const AddFriend = ({setFriends}) => {
     }
 
     return (
-        <form onSubmit={handleSubmit} >
+        <form className="add-friend" onSubmit={handleSubmit} >
             <input onChange={handleNameChange} type="text" placeholder="name" name="name" id="name" value={name} />
             <input onChange={handleAgeChange} type="text" placeholder="age" name="age" id="age" value={age} />
             <input onChange={handleEmailChange} type="text" placeholder="email" name="email" id="email" value={email} />
